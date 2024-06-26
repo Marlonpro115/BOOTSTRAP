@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MERCY</title>
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container-scroller">
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo" href="index.html"></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+                <div class="search-field d-none d-xl-block">
+                    <form class="d-flex align-items-center h-100" action="#">
+                        <div class="input-group">
+                            <div class="input-group-prepend bg-transparent">
+                                <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                            </div>
+                            <input type="text" class="form-control bg-transparent border-0" placeholder="Buscar...">
+                        </div>
+                    </form>
+                </div>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="nav-profile-img">
+                                <img src="assets/images/faces/face28.png" alt="image">
+                            </div>
+                            <div class="nav-profile-text">
+                                <p class="mb-1 text-black">Juan Perez</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
+                            aria-labelledby="profileDropdown" data-x-placement="bottom-end">
+                            <div class="p-3 text-center bg-primary">
+                                <img class="img-avatar img-avatar48 img-avatar-thumb"
+                                    src="assets/images/faces/face28.png" alt="">
+                            </div>
+                            <div class="p-2">
+                                <h5 class="dropdown-header text-uppercase pl-2 text-dark">User Options</h5>
+                                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                    href="#">
+                                    <span>Inbox</span>
+                                    <span class="p-0">
+                                        <span class="badge badge-primary">3</span>
+                                        <i class="mdi mdi-email-open-outline ml-1"></i>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                    href="#">
+                                    <span>Profile</span>
+                                    <span class="p-0">
+                                        <span class="badge badge-success">1</span>
+                                        <i class="mdi mdi-account-outline ml-1"></i>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Settings</span>
+                                    <i class="mdi mdi-settings"></i>
+                                </a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <h5 class="dropdown-header text-uppercase  pl-2 text-dark mt-2">Actions</h5>
+                                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                    href="#">
+                                    <span>Lock Account</span>
+                                    <i class="mdi mdi-lock ml-1"></i>
+                                </a>
+                                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                    href="#">
+                                    <span>Log Out</span>
+                                    <i class="mdi mdi-logout ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <div class="text-center">
+                    <img src="./img/icon2.png" alt="" style="max-width: 100%; height: auto;">
+                    <h5 class="mt-3 mb-0">MERCY</h5>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item nav-category">Menu</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dashboard.html">
+                            <span class="icon-bg"><i class="bi bi-house-door"></i></span>
+                            <span class="menu-title">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./personal.html">
+                            <span class="icon-bg"><i class="bi bi-person"></i></span>
+                            <span class="menu-title">Personal</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paciente.html">
+                            <span class="icon-bg"><i class="bi bi-people"></i></span>
+                            <span class="menu-title">Paciente</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./citaMedica.html">
+                            <span class="icon-bg"><i class="bi bi-calendar"></i></span>
+                            <span class="menu-title">Cita médica</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./orden.html">
+                            <span class="icon-bg"><i class="bi bi-journal-medical"></i></span>
+                            <span class="menu-title">Orden médica</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./receta.html">
+                            <span class="icon-bg"><i class="bi bi-clipboard-check"></i></span>
+                            <span class="menu-title">Receta médica</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">
+                            <span class="icon-bg"><i class="bi bi-box-arrow-right"></i></span>
+                            <span class="menu-title">Cerrar sesión</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- partial -->
+            <div class="main-panel">
+                <!-- Aquí agregamos el nuevo título -->
+                <div class="container">
+                    <h2 class="text-dark display-4 text-center mb-4">Nuevo Personal Médico</h2>
+                    <div class="card border-dark">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="firstName">Primer Nombre:</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName"
+                                            placeholder="Primer Nombre">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="secondName">Segundo Nombre:</label>
+                                        <input type="text" class="form-control" id="secondName" name="secondName"
+                                            placeholder="Segundo Nombre">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="firstSurname">Primer Apellido:</label>
+                                        <input type="text" class="form-control" id="firstSurname" name="firstSurname"
+                                            placeholder="Primer Apellido">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="secondSurname">Segundo Apellido:</label>
+                                        <input type="text" class="form-control" id="secondSurname" name="secondSurname"
+                                            placeholder="Segundo Apellido">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="documentType">Tipo de Documento:</label>
+                                        <select class="form-control" id="documentType" name="documentType">
+                                            <option value="">Seleccione...</option>
+                                            <option value="cc">Cédula de Ciudadanía</option>
+                                            <option value="ti">Tarjeta de Identidad</option>
+                                            <option value="ce">Cédula de Extranjería</option>
+                                            <option value="passport">Pasaporte</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="documentNumber">Número de Documento:</label>
+                                        <input type="text" class="form-control" id="documentNumber"
+                                            name="documentNumber" placeholder="Número de Documento">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="medicalRegistrationNumber">Número de Registro Médico:</label>
+                                    <input type="text" class="form-control" id="medicalRegistrationNumber"
+                                        name="medicalRegistrationNumber" placeholder="Número de Registro Médico">
+                                </div>
+                                <div class="form-group">
+                                    <label for="specialty">Especialidad:</label>
+                                    <select class="form-control" id="specialty" name="specialty">
+                                        <option value="">Seleccione...</option>
+                                        <option value="cardiology">Cardiología</option>
+                                        <option value="dermatology">Dermatología</option>
+                                        <option value="neurology">Neurología</option>
+                                        <option value="pediatrics">Pediatría</option>
+                                        <option value="psychiatry">Psiquiatría</option>
+                                        <option value="surgery">Cirugía</option>
+                                        <!-- Agrega más opciones según sea necesario -->
+                                    </select>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="department">Departamento donde reside:</label>
+                                        <select class="form-control" id="department" name="department">
+                                            <option value="">Seleccione...</option>
+                                            <option value="amazonas">Amazonas</option>
+                                            <option value="antioquia">Antioquia</option>
+                                            <option value="arauca">Arauca</option>
+                                            <option value="atlantico">Atlántico</option>
+                                            <option value="bolivar">Bolívar</option>
+                                            <option value="boyaca">Boyacá</option>
+                                            <option value="caldas">Caldas</option>
+                                            <option value="caqueta">Caquetá</option>
+                                            <option value="casanare">Casanare</option>
+                                            <option value="cauca">Cauca</option>
+                                            <option value="cesar">Cesar</option>
+                                            <option value="choco">Chocó</option>
+                                            <option value="cordoba">Córdoba</option>
+                                            <option value="cundinamarca">Cundinamarca</option>
+                                            <option value="guainia">Guainía</option>
+                                            <option value="guaviare">Guaviare</option>
+                                            <option value="huila">Huila</option>
+                                            <option value="guajira">La Guajira</option>
+                                            <option value="magdalena">Magdalena</option>
+                                            <option value="meta">Meta</option>
+                                            <option value="narino">Nariño</option>
+                                            <option value="nortesantander">Norte de Santander</option>
+                                            <option value="putumayo">Putumayo</option>
+                                            <option value="quindio">Quindío</option>
+                                            <option value="risaralda">Risaralda</option>
+                                            <option value="sanandres">San Andrés y Providencia</option>
+                                            <option value="santander">Santander</option>
+                                            <option value="sucre">Sucre</option>
+                                            <option value="tolima">Tolima</option>
+                                            <option value="valle">Valle del Cauca</option>
+                                            <option value="vaupes">Vaupés</option>
+                                            <option value="vichada">Vichada</option>
+                                            <!-- Agrega más departamentos según sea necesario -->
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="city">Ciudad donde reside:</label>
+                                        <input type="text" class="form-control" id="city" name="city"
+                                            placeholder="Ciudad donde reside">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Dirección donde reside:</label>
+                                    <input type="text" class="form-control" id="address" name="address"
+                                        placeholder="Dirección donde reside">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="phone">Teléfono:</label>
+                                        <input type="text" class="form-control" id="phone" name="phone"
+                                            placeholder="Teléfono">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="mobile">Celular:</label>
+                                        <input type="text" class="form-control" id="mobile" name="mobile"
+                                            placeholder="Celular">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico:</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Correo Electrónico">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmEmail">Confirmar Correo Electrónico:</label>
+                                    <input type="email" class="form-control" id="confirmEmail" name="confirmEmail"
+                                        placeholder="Confirmar Correo Electrónico">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sex">Sexo:</label>
+                                    <select class="form-control" id="sex" name="sex">
+                                        <option value="">Seleccione...</option>
+                                        <option value="male">Masculino</option>
+                                        <option value="female">Femenino</option>
+                                        <option value="other">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bloodGroup">Grupo Sanguíneo:</label>
+                                    <select class="form-control" id="bloodGroup" name="bloodGroup">
+                                        <option value="">Seleccione...</option>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="identityDocument">Adjuntar documento de identidad:</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="identityDocument"
+                                            name="identityDocument">
+                                        <label class="custom-file-label" for="identityDocument">Seleccione
+                                            archivo...</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="acceptPolicy"
+                                        name="acceptPolicy">
+                                    <label class="form-check-label" for="acceptPolicy">Acepto el tratamiento y la
+                                        Política de Protección de Datos Personales Servicios</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Registrar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- partial:partials/_footer.html -->
+                <footer class="footer">
+                    <div class="footer-inner-wraper">
+                        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©
+                                Asura Studio's
+                                <script>document.write(new Date().getFullYear());</script>
+                            </span>
+                            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">DEV : MARLON</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>

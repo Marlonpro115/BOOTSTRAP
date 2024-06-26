@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MERCY</title>
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container-scroller">
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo" href="index.html"></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+                <div class="search-field d-none d-xl-block">
+                    <form class="d-flex align-items-center h-100" action="#">
+                        <div class="input-group">
+                            <div class="input-group-prepend bg-transparent">
+                                <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                            </div>
+                            <input type="text" class="form-control bg-transparent border-0" placeholder="Buscar...">
+                        </div>
+                    </form>
+                </div>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="nav-profile-img">
+                                <img src="assets/images/faces/face28.png" alt="image">
+                            </div>
+                            <div class="nav-profile-text">
+                                <p class="mb-1 text-black">Juan Perez</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
+                            aria-labelledby="profileDropdown" data-x-placement="bottom-end">
+                            <div class="p-3 text-center bg-primary">
+                                <img class="img-avatar img-avatar48 img-avatar-thumb"
+                                    src="assets/images/faces/face28.png" alt="">
+                            </div>
+                            <div class="p-2">
+                                <h5 class="dropdown-header text-uppercase pl-2 text-dark">User Options</h5>
+                                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                    href="#">
+                                    <span>Inbox</span>
+                                    <span class="p-0">
+                                        <span class="badge badge-primary">3</span>
+                                        <i class="mdi mdi-email-open-outline ml-1"></i>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                    href="#">
+                                    <span>Profile</span>
+                                    <span class="p-0">
+                                        <span class="badge badge-success">1</span>
+                                        <i class="mdi mdi-account-outline ml-1"></i>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Settings</span>
+                                    <i class="mdi mdi-settings"></i>
+                                </a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <h5 class="dropdown-header text-uppercase  pl-2 text-dark mt-2">Actions</h5>
+                                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                    href="#">
+                                    <span>Lock Account</span>
+                                    <i class="mdi mdi-lock ml-1"></i>
+                                </a>
+                                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                    href="#">
+                                    <span>Log Out</span>
+                                    <i class="mdi mdi-logout ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <div class="text-center">
+                    <img src="./img/icon2.png" alt="" style="max-width: 100%; height: auto;">
+                    <h5 class="mt-3 mb-0">MERCY</h5>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item nav-category">Menu</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dashboard.html">
+                            <span class="icon-bg"><i class="bi bi-house-door"></i></span>
+                            <span class="menu-title">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./personal.html">
+                            <span class="icon-bg"><i class="bi bi-person"></i></span>
+                            <span class="menu-title">Personal</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paciente.html">
+                            <span class="icon-bg"><i class="bi bi-people"></i></span>
+                            <span class="menu-title">Paciente</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./citaMedica.html">
+                            <span class="icon-bg"><i class="bi bi-calendar"></i></span>
+                            <span class="menu-title">Cita médica</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./orden.html">
+                            <span class="icon-bg"><i class="bi bi-journal-medical"></i></span>
+                            <span class="menu-title">Orden médica</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./receta.html">
+                            <span class="icon-bg"><i class="bi bi-clipboard-check"></i></span>
+                            <span class="menu-title">Receta médica</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">
+                            <span class="icon-bg"><i class="bi bi-box-arrow-right"></i></span>
+                            <span class="menu-title">Cerrar sesión</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="container">
+                    <div class="card border-dark">
+                        <div class="card-body">
+                            <h2 class="text-dark display-4 text-center mb-4">Nueva Orden Médica</h2>
+
+                            <!-- Datos del Paciente -->
+                            <h4 class="card-title">Datos del Paciente</h4>
+                            <div class="form-group">
+                                <label for="patientName">Nombre del Paciente:</label>
+                                <input type="text" class="form-control" id="patientName" name="patientName"
+                                    placeholder="Nombre del Paciente">
+                            </div>
+                            <div class="form-group">
+                                <label for="patientAge">Edad:</label>
+                                <input type="number" class="form-control" id="patientAge" name="patientAge"
+                                    placeholder="Edad">
+                            </div>
+                            <div class="form-group">
+                                <label for="patientGender">Género:</label>
+                                <select class="form-control" id="patientGender" name="patientGender">
+                                    <option value="">Seleccione...</option>
+                                    <option value="male">Masculino</option>
+                                    <option value="female">Femenino</option>
+                                    <option value="other">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="patientAddress">Dirección:</label>
+                                <input type="text" class="form-control" id="patientAddress" name="patientAddress"
+                                    placeholder="Dirección">
+                            </div>
+
+                            <!-- Datos del Médico -->
+                            <h4 class="card-title mt-4">Datos del Médico</h4>
+                            <div class="form-group">
+                                <label for="doctorName">Nombre del Médico:</label>
+                                <input type="text" class="form-control" id="doctorName" name="doctorName"
+                                    placeholder="Nombre del Médico">
+                            </div>
+                            <div class="form-group">
+                                <label for="licenseNumber">Número de Licencia:</label>
+                                <input type="text" class="form-control" id="licenseNumber" name="licenseNumber"
+                                    placeholder="Número de Licencia">
+                            </div>
+                            <div class="form-group">
+                                <label for="specialty">Especialidad:</label>
+                                <input type="text" class="form-control" id="specialty" name="specialty"
+                                    placeholder="Especialidad">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">Contacto:</label>
+                                <input type="text" class="form-control" id="contact" name="contact"
+                                    placeholder="Contacto">
+                            </div>
+
+                            <!-- Datos de la Orden -->
+                            <h4 class="card-title mt-4">Datos de la Orden</h4>
+                            <div class="form-group">
+                                <label for="orderDate">Fecha de la Orden:</label>
+                                <input type="date" class="form-control" id="orderDate" name="orderDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="orderType">Tipo de Orden:</label>
+                                <select class="form-control" id="orderType" name="orderType">
+                                    <option value="">Seleccione...</option>
+                                    <option value="consulta">Consulta</option>
+                                    <option value="examen">Examen</option>
+                                    <option value="cirugia">Cirugía</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderDetails">Detalles de la Orden:</label>
+                                <textarea class="form-control" id="orderDetails" name="orderDetails" rows="3"
+                                    placeholder="Escriba aquí los detalles de la orden"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="additionalNotes">Notas Adicionales:</label>
+                                <textarea class="form-control" id="additionalNotes" name="additionalNotes" rows="3"
+                                    placeholder="Escriba aquí las notas adicionales"></textarea>
+                            </div>
+
+                            <!-- Botón de enviar -->
+                            <div class="text-left">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- partial:partials/_footer.html -->
+                <footer class="footer">
+                    <div class="footer-inner-wraper">
+                        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©
+                                Asura Studio's
+                                <script>document.write(new Date().getFullYear());</script>
+                            </span>
+                            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">DEV : MARLON</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>

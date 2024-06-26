@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MERCY - Dashboard</title>
+  <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <div class="container-scroller">
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html"></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="mdi mdi-menu"></span>
+        </button>
+        <div class="search-field d-none d-xl-block">
+          <form class="d-flex align-items-center h-100" action="#">
+            <div class="input-group">
+              <div class="input-group-prepend bg-transparent">
+                <i class="input-group-text border-0 mdi mdi-magnify"></i>
+              </div>
+              <input type="text" class="form-control bg-transparent border-0" placeholder="Buscar...">
+            </div>
+          </form>
+        </div>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
+              aria-expanded="false">
+              <div class="nav-profile-img">
+                <img src="assets/images/faces/face28.png" alt="image">
+              </div>
+              <div class="nav-profile-text">
+                <p class="mb-1 text-black">Juan Perez</p>
+              </div>
+            </a>
+            <div class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
+              aria-labelledby="profileDropdown" data-x-placement="bottom-end">
+              <div class="p-3 text-center bg-primary">
+                <img class="img-avatar img-avatar48 img-avatar-thumb" src="assets/images/faces/face28.png" alt="">
+              </div>
+              <div class="p-2">
+                <h5 class="dropdown-header text-uppercase pl-2 text-dark">User Options</h5>
+                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#">
+                  <span>Inbox</span>
+                  <span class="p-0">
+                    <span class="badge badge-primary">3</span>
+                    <i class="mdi mdi-email-open-outline ml-1"></i>
+                  </span>
+                </a>
+                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#">
+                  <span>Profile</span>
+                  <span class="p-0">
+                    <span class="badge badge-success">1</span>
+                    <i class="mdi mdi-account-outline ml-1"></i>
+                  </span>
+                </a>
+                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                  href="javascript:void(0)">
+                  <span>Settings</span>
+                  <i class="mdi mdi-settings"></i>
+                </a>
+                <div role="separator" class="dropdown-divider"></div>
+                <h5 class="dropdown-header text-uppercase  pl-2 text-dark mt-2">Actions</h5>
+                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#">
+                  <span>Lock Account</span>
+                  <i class="mdi mdi-lock ml-1"></i>
+                </a>
+                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#">
+                  <span>Log Out</span>
+                  <i class="mdi mdi-logout ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="text-center">
+          <img src="./img/icon2.png" alt="" style="max-width: 100%; height: auto;">
+          <h5 class="mt-3 mb-0">MERCY</h5>
+        </div>
+        <ul class="nav">
+          <li class="nav-item nav-category">Menu</li>
+          <li class="nav-item">
+            <a class="nav-link" href="./dashboard.html">
+              <span class="icon-bg"><i class="bi bi-house-door"></i></span>
+              <span class="menu-title">Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./personal.html">
+              <span class="icon-bg"><i class="bi bi-person"></i></span>
+              <span class="menu-title">Personal</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paciente.html">
+              <span class="icon-bg"><i class="bi bi-people"></i></span>
+              <span class="menu-title">Paciente</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./citaMedica.html">
+              <span class="icon-bg"><i class="bi bi-calendar"></i></span>
+              <span class="menu-title">Cita médica</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./orden.html">
+              <span class="icon-bg"><i class="bi bi-journal-medical"></i></span>
+              <span class="menu-title">Orden médica</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./receta.html">
+              <span class="icon-bg"><i class="bi bi-clipboard-check"></i></span>
+              <span class="menu-title">Receta médica</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">
+              <span class="icon-bg"><i class="bi bi-box-arrow-right"></i></span>
+              <span class="menu-title">Cerrar sesión</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row" id="proBanner">
+            <div class="col-12">
+              <span class="d-flex align-items-center purchase-popup">
+                <i class="mdi mdi-close" id="bannerClose"></i>
+              </span>
+            </div>
+          </div>
+          <div class="d-xl-flex justify-content-between align-items-start">
+            <h2 class="text-dark font-weight-bold mb-2"> Panel de descripción general </h2>
+            <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
+
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="tab-content tab-transparent-content">
+                <div class="tab-pane fade show active" id="business-1" role="tabpanel" aria-labelledby="business-tab">
+                  <div class="row">
+
+                    <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
+                      <div class="card">
+                        <div class="card-body text-center">
+                          <h5 class="mb-2 text-dark font-weight-normal">Citas</h5>
+                          <h2 class="mb-4 text-dark font-weight-bold">45</h2>
+                          <div
+                            class="dashboard-progress dashboard-progress-1 d-flex align-items-center justify-content-center item-parent">
+                            <i class="bi bi-calendar icon-md absolute-center text-dark"></i>
+                          </div>
+                          <p class="mt-4 mb-0">Cantidad</p>
+                          <h3 class="mb-0 font-weight-bold mt-2 text-dark">78%</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
+                      <div class="card">
+                        <div class="card-body text-center">
+                          <h5 class="mb-2 text-dark font-weight-normal">Orden médica</h5>
+                          <h2 class="mb-4 text-dark font-weight-bold">75</h2>
+                          <div
+                            class="dashboard-progress dashboard-progress-2 d-flex align-items-center justify-content-center item-parent">
+                            <i class="bi bi-journal-medical icon-md absolute-center text-dark"></i>
+                          </div>
+                          <p class="mt-4 mb-0">Dia de hoy</p>
+                          <h3 class="mb-0 font-weight-bold mt-2 text-dark">50%</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-3  col-lg-6 col-sm-6 grid-margin stretch-card">
+                      <div class="card">
+                        <div class="card-body text-center">
+                          <h5 class="mb-2 text-dark font-weight-normal">Receta médica</h5>
+                          <h2 class="mb-4 text-dark font-weight-bold">100</h2>
+                          <div
+                            class="dashboard-progress dashboard-progress-3 d-flex align-items-center justify-content-center item-parent">
+                            <i class="bi bi-clipboard-check icon-md absolute-center text-dark"></i>
+                          </div>
+                          <p class="mt-4 mb-0">Promedio</p>
+                          <h3 class="mb-0 font-weight-bold mt-2 text-dark">35%</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
+                      <div class="card">
+                        <div class="card-body text-center">
+                          <h5 class="mb-2 text-dark font-weight-normal">Paciente</h5>
+                          <h2 class="mb-4 text-dark font-weight-bold">42</h2>
+                          <div
+                            class="dashboard-progress dashboard-progress-4 d-flex align-items-center justify-content-center item-parent">
+                            <i class="bi bi-people icon-md absolute-center text-dark"></i>
+                          </div>
+                          <p class="mt-4 mb-0">Promedio del dia</p>
+                          <h3 class="mb-0 font-weight-bold mt-2 text-dark">25%</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="row">
+                    <div class="col-sm-4 grid-margin stretch-card">
+                      <div class="card card-danger-gradient">
+                        <div class="card-body mb-4">
+                          <h4 class="card-title text-white">Ganancias mensuales</h4>
+                          <canvas id="account-retension"></canvas>
+                        </div>
+                        <div class="card-body bg-white pt-4">
+                          <div class="row pt-4">
+                            <div class="col-sm-6">
+                              <div class="text-center border-right border-md-0">
+                                <h4>Mes pasado</h4>
+                                <h1 class="text-dark font-weight-bold mb-md-3">$306</h1>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="text-center">
+                                <h4>Mes actual</h4>
+                                <h1 class="text-dark font-weight-bold">$1,520</h1>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-8  grid-margin stretch-card">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-xl-flex justify-content-between mb-2">
+                            <h4 class="card-title">Pacientes</h4>
+                            <div class="graph-custom-legend primary-dot" id="pageViewAnalyticLengend"></div>
+                          </div>
+                          <canvas id="page-view-analytic"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="footer-inner-wraper">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Asura Studio's
+                <script>document.write(new Date().getFullYear());</script>
+              </span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">DEV : MARLON</span>
+            </div>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+  <script src="assets/vendors/chart.js/Chart.min.js"></script>
+  <script src="assets/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
+  <script src="assets/js/off-canvas.js"></script>
+  <script src="assets/js/hoverable-collapse.js"></script>
+  <script src="assets/js/misc.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
